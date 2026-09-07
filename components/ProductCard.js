@@ -9,7 +9,7 @@ export default function ProductCard({ product }) {
   return (
     <Link
       href={href}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-white transition hover:-translate-y-1 hover:shadow-xl hover:shadow-ink/5"
+      className="group flex flex-col overflow-hidden rounded-lg border border-sand-200 bg-white transition hover:-translate-y-1 hover:border-clay/30 hover:shadow-xl hover:shadow-ink/5"
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-sand-100">
         <Image
@@ -19,7 +19,7 @@ export default function ProductCard({ product }) {
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover transition duration-500 group-hover:scale-105"
         />
-        <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-ink/70">
+        <span className="absolute left-3 top-3 rounded-md bg-white/90 px-3 py-1 text-xs font-semibold text-ink/70 shadow-sm shadow-ink/10">
           {product.category}
         </span>
       </div>

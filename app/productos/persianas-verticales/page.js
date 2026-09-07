@@ -2,12 +2,12 @@ import ProductDetail from "@/components/ProductDetail";
 import { getProduct } from "@/data/products";
 import { buildMetadata } from "@/lib/seo";
 
-const product = getProduct("persianas-enrollables");
+const product = getProduct("persianas-verticales");
 
 export const metadata = buildMetadata({
   title: product.metaTitle,
   description: product.metaDescription,
-  path: "/productos/persianas-enrollables",
+  path: "/productos/persianas-verticales",
   image: product.image,
 });
 

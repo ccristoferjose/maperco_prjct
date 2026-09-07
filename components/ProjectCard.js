@@ -7,7 +7,7 @@ import { createWhatsAppLink } from "@/lib/whatsapp";
 export default function ProjectCard({ project }) {
   const message = `Hola Persianas Maperco, vi su proyecto "${project.title}" (${project.product}) y quiero algo similar. ¿Me pueden cotizar?`;
   return (
-    <article className="group overflow-hidden rounded-2xl border border-ink/10 bg-white">
+    <article className="group overflow-hidden rounded-lg border border-sand-200 bg-white transition hover:-translate-y-1 hover:border-clay/30 hover:shadow-xl hover:shadow-ink/5">
       <div className="relative aspect-[4/3] overflow-hidden bg-sand-100">
         <Image
           src={project.image}
@@ -19,10 +19,10 @@ export default function ProjectCard({ project }) {
       </div>
       <div className="p-5">
         <div className="flex flex-wrap gap-2">
-          <span className="rounded-full bg-clay-50 px-3 py-1 text-xs font-semibold text-clay-600">
+          <span className="rounded-md bg-clay-50 px-3 py-1 text-xs font-semibold text-clay-600">
             {project.product}
           </span>
-          <span className="rounded-full bg-sand-100 px-3 py-1 text-xs font-semibold text-ink/60">
+          <span className="rounded-md bg-sand-100 px-3 py-1 text-xs font-semibold text-ink/60">
             {project.space}
           </span>
         </div>

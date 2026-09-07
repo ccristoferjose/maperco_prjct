@@ -52,7 +52,7 @@ export default function QuoteForm({ defaultProduct = "" }) {
 
   return (
     <form
-      className="rounded-2xl border border-ink/10 bg-white p-6 sm:p-8"
+      className="rounded-lg border border-sand-200 bg-white p-6 shadow-sm shadow-ink/5 sm:p-8"
       onSubmit={(e) => {
         e.preventDefault();
         window.open(waHref, "_blank", "noopener,noreferrer");
@@ -160,10 +160,10 @@ export default function QuoteForm({ defaultProduct = "" }) {
                 key={s}
                 type="button"
                 onClick={() => setForm((prev) => ({ ...prev, espacio: s }))}
-                className={`rounded-full px-4 py-2 text-sm font-medium transition ${
+                className={`rounded-md px-4 py-2 text-sm font-medium transition ${
                   form.espacio === s
                     ? "bg-ink text-white"
-                    : "border border-ink/15 bg-white text-ink/70 hover:border-ink/30"
+                    : "border border-sand-200 bg-white text-ink/70 hover:border-clay/30"
                 }`}
                 aria-pressed={form.espacio === s}
               >
@@ -188,9 +188,9 @@ export default function QuoteForm({ defaultProduct = "" }) {
         </div>
       </div>
 
-      <p className="mt-5 rounded-xl bg-sand-100 px-4 py-3 text-sm text-ink/70">
-        💡 Puedes adjuntar fotos de tus ventanas directamente por WhatsApp para
-        una cotización más precisa.
+      <p className="mt-5 rounded-md bg-sand-100 px-4 py-3 text-sm text-ink/70">
+        Puedes adjuntar fotos de tus ventanas directamente por WhatsApp para una
+        cotización más precisa.
       </p>
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row">

@@ -1,14 +1,13 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionHeading from "@/components/SectionHeading";
 import ProductCard from "@/components/ProductCard";
-import CTASection from "@/components/CTASection";
 import { products } from "@/data/products";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "Productos | Persianas y Cortinas a la Medida en Guatemala | Maperco",
   description:
-    "Conoce nuestros productos: persianas enrollables, blackout, screen, día y noche, cortinas romanas, puertas plegables y mosquiteros a la medida en Guatemala.",
+    "Conoce nuestros productos: persianas blackout, screen, verticales, cortinas romanas, puertas plegables y mosquiteros a la medida en Guatemala.",
   path: "/productos",
 });
 
@@ -36,13 +35,6 @@ export default function ProductosPage() {
           </div>
         </div>
       </section>
-
-      <CTASection
-        title="¿No sabes qué producto elegir?"
-        subtitle="Cuéntanos cómo es tu espacio y te asesoramos para encontrar la mejor solución."
-        whatsAppKey="general"
-        primaryLabel="Hablar con un asesor"
-      />
     </>
   );
 }

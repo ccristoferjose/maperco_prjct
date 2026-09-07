@@ -26,10 +26,10 @@ export default function Gallery({ projects = [], filters = [] }) {
               key={opt}
               type="button"
               onClick={() => setActive(opt)}
-              className={`rounded-full px-4 py-2 text-sm font-medium transition ${
+              className={`rounded-md px-4 py-2 text-sm font-medium transition ${
                 isActive
                   ? "bg-ink text-white"
-                  : "border border-ink/15 bg-white text-ink/70 hover:border-ink/30"
+                  : "border border-sand-200 bg-white text-ink/70 hover:border-clay/30"
               }`}
               aria-pressed={isActive}
             >

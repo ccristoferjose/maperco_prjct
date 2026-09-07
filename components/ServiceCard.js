@@ -8,7 +8,7 @@ export default function ServiceCard({ service }) {
   return (
     <Link
       href={href}
-      className="group flex flex-col rounded-2xl border border-ink/10 bg-white p-6 transition hover:-translate-y-1 hover:border-clay/40 hover:shadow-xl hover:shadow-ink/5"
+      className="group flex flex-col rounded-lg border border-sand-200 bg-white p-6 transition hover:-translate-y-1 hover:border-clay/30 hover:shadow-xl hover:shadow-ink/5"
     >
       <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-clay-50 text-clay-600">
         <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">

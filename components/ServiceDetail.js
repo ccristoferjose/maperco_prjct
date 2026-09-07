@@ -61,7 +61,7 @@ export default function ServiceDetail({ service }) {
               </Link>
             </div>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-sand-100 shadow-xl shadow-ink/5">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-sand-100 shadow-xl shadow-ink/5">
             <Image
               src={service.image}
               alt={`${service.name} en Guatemala — Persianas Maperco`}
@@ -92,14 +92,14 @@ export default function ServiceDetail({ service }) {
               ))}
             </ul>
           </div>
-          <div className="rounded-2xl border border-ink/10 bg-sand-50 p-7">
+          <div className="rounded-lg border border-sand-200 bg-sand-50 p-7">
             <h2 className="text-2xl font-bold text-ink sm:text-3xl">
               Cómo trabajamos
             </h2>
             <ol className="mt-6 space-y-5">
               {service.steps.map((step, i) => (
                 <li key={step} className="flex gap-4">
-                  <span className="inline-flex h-8 w-8 flex-none items-center justify-center rounded-full bg-clay text-sm font-bold text-white">
+                  <span className="inline-flex h-8 w-8 flex-none items-center justify-center rounded-md bg-clay text-sm font-bold text-white">
                     {i + 1}
                   </span>
                   <span className="pt-1 text-base leading-7 text-ink/75">{step}</span>

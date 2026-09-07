@@ -14,7 +14,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Persianas en Guatemala | A la Medida, Instalación y Reparación | Maperco",
   description:
-    "¿Buscas persianas en Guatemala? En Persianas Maperco fabricamos, instalamos y reparamos persianas y cortinas a la medida: blackout, screen, día y noche, enrollables y más. Cotiza por WhatsApp.",
+    "¿Buscas persianas en Guatemala? En Persianas Maperco fabricamos, instalamos y reparamos persianas y cortinas a la medida: blackout, screen, verticales y más. Cotiza por WhatsApp.",
   path: "/persianas-guatemala",
 });
 
@@ -38,7 +38,7 @@ export default function PersianasGuatemalaPage() {
             <p className="mt-6 text-lg leading-8 text-ink/70">
               Somos especialistas en persianas y cortinas a la medida en
               Guatemala. Fabricamos, instalamos, reparamos y damos mantenimiento a
-              persianas blackout, screen, día y noche, enrollables, cortinas
+              persianas blackout, screen, verticales, cortinas
               romanas, puertas plegables y mosquiteros para hogares, oficinas y
               comercios.
             </p>
@@ -67,9 +67,9 @@ export default function PersianasGuatemalaPage() {
               se fabrican a la medida exacta de tus ventanas. Si buscas oscuridad
               total, las persianas blackout son ideales para dormitorios y salas de
               TV; si necesitas control solar manteniendo la vista, las persianas
-              screen son perfectas para oficinas y ventanales; y si quieres
-              regular la luz a tu gusto, las persianas día y noche te dan lo mejor
-              de ambos mundos.
+              screen son perfectas para oficinas y ventanales; y si necesitas
+              cubrir ventanales amplios, las persianas verticales aportan control
+              práctico de luz y privacidad.
             </p>
             <p className="mt-4">
               Además de la venta y fabricación, ofrecemos instalación profesional,

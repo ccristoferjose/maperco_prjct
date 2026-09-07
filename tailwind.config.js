@@ -9,28 +9,38 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Paleta premium, cálida y elegante — orientada a interiores.
+        // MAPERCO brand system: refined blues, cool neutrals, and white space.
+        brand: {
+          primary: "#12146F",
+          secondary: "#142172",
+          gray: "#A5A4AA",
+          white: "#FFFFFF",
+          navy: "#090B3F",
+          light: "#EEF1F8",
+          soft: "#F7F8FB",
+          border: "#DDE2EF",
+        },
         ink: {
-          DEFAULT: "#14110E",
-          900: "#1C1813",
-          800: "#262019",
+          DEFAULT: "#101244",
+          900: "#090B3F",
+          800: "#12146F",
         },
         sand: {
-          50: "#FBF9F5",
-          100: "#F5F1EA",
-          200: "#EBE4D8",
-          300: "#DCD1BE",
+          50: "#F7F8FB",
+          100: "#EEF1F8",
+          200: "#DDE2EF",
+          300: "#C8CFDE",
         },
         clay: {
-          DEFAULT: "#B07A3C",
-          50: "#FAF3EA",
-          100: "#F0E0CA",
-          200: "#E0C193",
-          300: "#CFA362",
-          400: "#BE8A45",
-          500: "#B07A3C",
-          600: "#915F2C",
-          700: "#714A24",
+          DEFAULT: "#12146F",
+          50: "#EEF1F8",
+          100: "#DDE2EF",
+          200: "#BFC7DA",
+          300: "#7F89B7",
+          400: "#48549B",
+          500: "#12146F",
+          600: "#142172",
+          700: "#0D104F",
         },
       },
       fontFamily: {

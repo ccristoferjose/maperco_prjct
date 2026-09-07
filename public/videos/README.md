@@ -1,12 +1,11 @@
 # Videos del hero (carrusel)
 
-La home muestra un **carrusel de 3 videos** de fondo. Coloca aquí los archivos
-con estos nombres exactos:
+La home muestra un **carrusel de 3 videos** de fondo. Los archivos activos son:
 
 ```
-hero-1.mp4
-hero-2.mp4
-hero-3.mp4
+hero-maperco.mp4
+hero-maperco-2.mp4
+hero-maperco-3.mp4
 ```
 
 > Puedes cambiar los nombres o la cantidad editando el arreglo `videos` en
@@ -30,5 +29,5 @@ hero-3.mp4
 Ideas de contenido: persianas abriéndose, luz natural entrando por una ventana,
 detalle de telas blackout/screen, instalación profesional o antes/después.
 
-Mientras no existan los archivos, el hero mostrará el `poster`
-(`/public/images/hero-fallback.jpg`) y el overlay oscuro.
+El hero usa un overlay navy sutil para integrar el video con la identidad de
+MAPERCO y mantener legible el texto.

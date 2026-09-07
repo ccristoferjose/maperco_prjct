@@ -17,7 +17,7 @@ export const services = [
     intro:
       "Una persiana bien instalada dura más, opera mejor y luce impecable. Nuestro equipo realiza el montaje con las herramientas y fijaciones adecuadas para cada tipo de pared y ventana, dejando todo nivelado, seguro y limpio.",
     points: [
-      "Instalación de persianas enrollables, blackout, screen, día y noche y cortinas",
+      "Instalación de persianas blackout, screen, verticales y cortinas",
       "Fijaciones adecuadas para tabla yeso, block, concreto o aluminio",
       "Montaje nivelado y verificación de operación",
       "Trabajo limpio y ordenado en tu espacio",

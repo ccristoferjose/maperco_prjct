@@ -31,7 +31,7 @@ export default function ContactForm() {
 
   return (
     <form
-      className="rounded-2xl border border-ink/10 bg-white p-6 sm:p-8"
+      className="rounded-lg border border-sand-200 bg-white p-6 shadow-sm shadow-ink/5 sm:p-8"
       onSubmit={(e) => {
         e.preventDefault();
         window.open(waHref, "_blank", "noopener,noreferrer");

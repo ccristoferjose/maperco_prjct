@@ -31,7 +31,7 @@ export default function FAQSection({
             />
           ) : null}
 
-          <dl className="mt-10 divide-y divide-ink/10 rounded-2xl border border-ink/10 bg-white">
+          <dl className="mt-10 divide-y divide-sand-200 rounded-lg border border-sand-200 bg-white shadow-sm shadow-ink/5">
             {faqs.map((faq, i) => {
               const isOpen = openIndex === i;
               return (
@@ -40,7 +40,7 @@ export default function FAQSection({
                     <button
                       type="button"
                       onClick={() => setOpenIndex(isOpen ? -1 : i)}
-                      className="flex w-full items-center justify-between gap-4 rounded-xl px-4 py-4 text-left transition hover:bg-sand-50"
+                      className="flex w-full items-center justify-between gap-4 rounded-md px-4 py-4 text-left transition hover:bg-sand-50"
                       aria-expanded={isOpen}
                     >
                       <span className="text-base font-semibold text-ink">

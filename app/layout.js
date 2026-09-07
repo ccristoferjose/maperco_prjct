@@ -27,15 +27,22 @@ export const metadata = {
   description: site.description,
   applicationName: site.name,
   authors: [{ name: site.name }],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.svg",
+    apple: "/icon.svg",
+  },
   keywords: [
     "persianas en Guatemala",
     "persianas a medida Guatemala",
     "instalación de persianas Guatemala",
     "persianas blackout Guatemala",
     "cortinas blackout Guatemala",
-    "persianas enrollables Guatemala",
     "persianas screen Guatemala",
-    "persianas día y noche Guatemala",
+    "persianas verticales Guatemala",
     "cortinas romanas Guatemala",
     "mosquiteros Guatemala",
     "puertas plegables Guatemala",
@@ -56,7 +63,7 @@ export const metadata = {
 };
 
 export const viewport = {
-  themeColor: "#14110E",
+  themeColor: "#090B3F",
   width: "device-width",
   initialScale: 1,
 };

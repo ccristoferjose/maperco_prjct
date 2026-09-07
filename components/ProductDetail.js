@@ -69,7 +69,7 @@ export default function ProductDetail({ product }) {
               </Link>
             </div>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-sand-100 shadow-xl shadow-ink/5">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-sand-100 shadow-xl shadow-ink/5">
             <Image
               src={product.image}
               alt={`${product.name} a la medida en Guatemala — Persianas Maperco`}
@@ -100,7 +100,7 @@ export default function ProductDetail({ product }) {
               ))}
             </ul>
           </div>
-          <div className="rounded-2xl border border-ink/10 bg-sand-50 p-7">
+          <div className="rounded-lg border border-sand-200 bg-sand-50 p-7">
             <h2 className="text-2xl font-bold text-ink sm:text-3xl">
               Usos recomendados
             </h2>
@@ -108,7 +108,7 @@ export default function ProductDetail({ product }) {
               {product.uses.map((u) => (
                 <span
                   key={u}
-                  className="rounded-full border border-ink/10 bg-white px-4 py-2 text-sm font-medium text-ink/70"
+                  className="rounded-md border border-sand-200 bg-white px-4 py-2 text-sm font-medium text-ink/70"
                 >
                   {u}
                 </span>
@@ -132,7 +132,7 @@ export default function ProductDetail({ product }) {
               {product.gallery.map((src, i) => (
                 <div
                   key={src}
-                  className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-sand-100"
+                  className="relative aspect-[4/3] overflow-hidden rounded-lg bg-sand-100"
                 >
                   <Image
                     src={src}
@@ -158,9 +158,9 @@ export default function ProductDetail({ product }) {
             {quoteSteps.map((s, i) => (
               <li
                 key={s.t}
-                className="rounded-2xl border border-ink/10 bg-sand-50 p-6"
+                className="rounded-lg border border-sand-200 bg-sand-50 p-6"
               >
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-clay text-sm font-bold text-white">
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-clay text-sm font-bold text-white">
                   {i + 1}
                 </span>
                 <h3 className="mt-4 text-base font-semibold text-ink">{s.t}</h3>

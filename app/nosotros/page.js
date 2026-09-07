@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionHeading from "@/components/SectionHeading";
-import CTASection from "@/components/CTASection";
 import { site } from "@/lib/site";
 import { buildMetadata } from "@/lib/seo";
 
@@ -59,7 +58,7 @@ export default function NosotrosPage() {
                 Trabajamos con hogares, oficinas y comercios que buscan controlar
                 la luz, ganar privacidad y decorar sus espacios con un acabado
                 elegante. Nos especializamos en soluciones hechas a la medida, con
-                productos como persianas blackout, screen, día y noche, cortinas
+                productos como persianas blackout, screen, verticales, cortinas
                 romanas y francesas, además de puertas plegables y mosquiteros.
               </p>
               <p>
@@ -73,7 +72,7 @@ export default function NosotrosPage() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-sand-100 shadow-xl shadow-ink/5">
             <Image
-              src="https://images.unsplash.com/photo-1600210492493-0946911123ea?auto=format&fit=crop&w=1200&q=70"
+              src="/images/archive/screen-persiana-space.png"
               alt="Interior moderno con persianas instaladas por Persianas Maperco en Guatemala"
               fill
               priority
@@ -111,13 +110,6 @@ export default function NosotrosPage() {
           />
         </div>
       </section>
-
-      <CTASection
-        title="Trabajemos juntos en tu próximo proyecto"
-        subtitle="Cuéntanos qué necesitas y te damos una propuesta a la medida."
-        whatsAppKey="general"
-        primaryLabel="Hablar con un asesor"
-      />
     </>
   );
 }
