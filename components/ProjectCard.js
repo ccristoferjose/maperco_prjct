@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { createWhatsAppLink } from "@/lib/whatsapp";
+import { mediaPath } from "@/lib/paths";
 
 /**
  * Tarjeta de proyecto para la galería.
@@ -10,7 +11,7 @@ export default function ProjectCard({ project }) {
     <article className="group overflow-hidden rounded-lg border border-sand-200 bg-white transition hover:-translate-y-1 hover:border-clay/30 hover:shadow-xl hover:shadow-ink/5">
       <div className="relative aspect-[4/3] overflow-hidden bg-sand-100">
         <Image
-          src={project.image}
+          src={mediaPath(project.image)}
           alt={`${project.title} — ${project.product} en ${project.space} | Persianas Maperco`}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"

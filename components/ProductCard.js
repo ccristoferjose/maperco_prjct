@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { mediaPath } from "@/lib/paths";
 
 /**
  * Tarjeta de producto para grillas.
@@ -13,7 +14,7 @@ export default function ProductCard({ product }) {
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-sand-100">
         <Image
-          src={product.image}
+          src={mediaPath(product.image)}
           alt={`${product.name} a la medida en Guatemala — Persianas Maperco`}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"

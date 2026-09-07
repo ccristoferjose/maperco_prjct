@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { mediaPath } from "@/lib/paths";
 
 /**
  * Hero full screen con carrusel de videos de fondo, overlay y CTAs.
@@ -33,7 +34,14 @@ export default function VideoHero({
     videos && videos.length
       ? videos
       : [{ src: videoSrc, poster: posterSrc }]
-  ).map((v) => (typeof v === "string" ? { src: v, poster: posterSrc } : v));
+  ).map((v) => {
+    const slide = typeof v === "string" ? { src: v, poster: posterSrc } : v;
+    return {
+      ...slide,
+      src: mediaPath(slide.src),
+      poster: mediaPath(slide.poster || posterSrc),
+    };
+  });
 
   const isCarousel = slides.length > 1;
   const [active, setActive] = useState(0);
@@ -97,7 +105,7 @@ export default function VideoHero({
           loop={!isCarousel}
           playsInline
           preload={i === 0 ? "auto" : "none"}
-          poster={slide.poster || posterSrc || undefined}
+          poster={slide.poster || undefined}
           aria-hidden="true"
           onEnded={isCarousel ? goNext : undefined}
         >

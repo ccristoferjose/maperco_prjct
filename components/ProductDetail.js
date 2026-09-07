@@ -10,6 +10,7 @@ import { products } from "@/data/products";
 import { getFaqs } from "@/data/faqs";
 import { site } from "@/lib/site";
 import { productSchema, jsonLd } from "@/lib/schema";
+import { mediaPath } from "@/lib/paths";
 
 const quoteSteps = [
   { t: "Cuéntanos qué necesitas", d: "Escríbenos por WhatsApp o usa el formulario con tus datos." },
@@ -71,7 +72,7 @@ export default function ProductDetail({ product }) {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-sand-100 shadow-xl shadow-ink/5">
             <Image
-              src={product.image}
+              src={mediaPath(product.image)}
               alt={`${product.name} a la medida en Guatemala — Persianas Maperco`}
               fill
               priority
@@ -135,7 +136,7 @@ export default function ProductDetail({ product }) {
                   className="relative aspect-[4/3] overflow-hidden rounded-lg bg-sand-100"
                 >
                   <Image
-                    src={src}
+                    src={mediaPath(src)}
                     alt={`${product.name} — ejemplo ${i + 1} | Persianas Maperco Guatemala`}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"

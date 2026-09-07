@@ -3,6 +3,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionHeading from "@/components/SectionHeading";
 import { site } from "@/lib/site";
 import { buildMetadata } from "@/lib/seo";
+import { mediaPath } from "@/lib/paths";
 
 export const metadata = buildMetadata({
   title: "Nosotros | Persianas Maperco | Persianas a la Medida en Guatemala",
@@ -72,7 +73,7 @@ export default function NosotrosPage() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-3xl bg-sand-100 shadow-xl shadow-ink/5">
             <Image
-              src="/images/archive/screen-persiana-space.png"
+              src={mediaPath("/images/archive/screen-persiana-space.png")}
               alt="Interior moderno con persianas instaladas por Persianas Maperco en Guatemala"
               fill
               priority

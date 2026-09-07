@@ -3,6 +3,7 @@ import Image from "next/image";
 import { waLink } from "@/lib/whatsapp";
 import { WhatsAppIcon } from "@/components/WhatsAppButton";
 import { archiveImages } from "@/data/archive";
+import { mediaPath } from "@/lib/paths";
 
 /**
  * Bloque de cierre orientado a conversión.
@@ -59,7 +60,7 @@ export default function CTASection({
                 }`}
               >
                 <Image
-                  src={image.src}
+                  src={mediaPath(image.src)}
                   alt={image.alt}
                   fill
                   sizes="(max-width: 1024px) 33vw, 22vw"

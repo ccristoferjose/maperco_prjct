@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 import { archiveImages } from "@/data/archive";
+import { mediaPath } from "@/lib/paths";
 
 export default function ArchiveSection({ images = archiveImages }) {
   if (!images.length) return null;
@@ -23,7 +24,7 @@ export default function ArchiveSection({ images = archiveImages }) {
           <article className="group overflow-hidden rounded-lg border border-sand-200 bg-sand-50">
             <div className="relative aspect-[4/3] overflow-hidden bg-sand-100 lg:aspect-[16/10]">
               <Image
-                src={featured.src}
+                src={mediaPath(featured.src)}
                 alt={featured.alt}
                 fill
                 sizes="(max-width: 1024px) 100vw, 58vw"
@@ -44,7 +45,7 @@ export default function ArchiveSection({ images = archiveImages }) {
               >
                 <div className="relative aspect-[4/3] overflow-hidden bg-sand-100">
                   <Image
-                    src={image.src}
+                    src={mediaPath(image.src)}
                     alt={image.alt}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 21vw"
