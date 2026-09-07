@@ -1,7 +1,6 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
-import CTASection from "@/components/CTASection";
 import { services } from "@/data/services";
 import { buildMetadata } from "@/lib/seo";
 
@@ -36,13 +35,6 @@ export default function ServiciosPage() {
           </div>
         </div>
       </section>
-
-      <CTASection
-        title="Agenda tu visita de medición"
-        subtitle="Coordinamos una visita para asesorarte y tomar medidas exactas."
-        whatsAppKey="medicion"
-        primaryLabel="Agendar medición"
-      />
     </>
   );
 }

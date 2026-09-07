@@ -3,66 +3,43 @@
 
 export const products = [
   {
-    slug: "persianas-enrollables",
-    name: "Persianas enrollables",
-    shortName: "Enrollables",
-    category: "Persianas",
-    waKey: "enrollables",
-    excerpt:
-      "El clásico versátil: limpias, prácticas y a la medida para cualquier ventana.",
-    h1: "Persianas enrollables en Guatemala",
-    metaTitle:
-      "Persianas Enrollables en Guatemala | A la Medida | Persianas Maperco",
-    metaDescription:
-      "Persianas enrollables a la medida para casas, oficinas y comercios en Guatemala. Telas screen, blackout y traslúcidas. Cotiza por WhatsApp con Persianas Maperco.",
-    intro:
-      "Las persianas enrollables son la solución más versátil y limpia para controlar la luz en cualquier ambiente. Se enrollan en un tubo superior discreto y se adaptan a ventanas pequeñas o grandes ventanales, con telas que van desde traslúcidas hasta blackout total.",
-    benefits: [
-      "Diseño minimalista que se integra a cualquier decoración",
-      "Control de luz según la tela elegida (screen, traslúcida o blackout)",
-      "Ocupan muy poco espacio al recogerse",
-      "Fáciles de operar y de limpiar",
-      "Fabricadas a la medida exacta de tu ventana",
-    ],
-    uses: ["Salas", "Dormitorios", "Cocinas", "Oficinas", "Comercios"],
-    image:
-      "https://images.unsplash.com/photo-1513161455079-7dc1de15ef3e?auto=format&fit=crop&w=1200&q=70",
-    gallery: [
-      "https://images.unsplash.com/photo-1513161455079-7dc1de15ef3e?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1567016432779-094069958ea5?auto=format&fit=crop&w=900&q=70",
-    ],
-  },
-  {
     slug: "persianas-blackout",
     name: "Persianas blackout",
     shortName: "Blackout",
     category: "Persianas",
     waKey: "blackout",
-    featured: true,
     excerpt:
-      "Oscuridad total y privacidad para dormitorios, salas de TV y oficinas.",
+      "Máxima privacidad y control de luz para dormitorios, oficinas y espacios que requieren mayor oscuridad.",
     h1: "Persianas blackout en Guatemala",
     metaTitle:
-      "Persianas Blackout en Guatemala | Fabricación e Instalación | Maperco",
+      "Persianas Blackout en Guatemala | A la Medida | Persianas Maperco",
     metaDescription:
-      "Instalamos persianas blackout a la medida para dormitorios, salas, oficinas y espacios que necesitan privacidad y control total de luz. Cotiza por WhatsApp.",
+      "Persianas blackout a la medida para dormitorios, oficinas, hoteles y comercios en Guatemala. Mayor privacidad, control de luz y confort. Cotiza por WhatsApp con Persianas Maperco.",
     intro:
-      "Las persianas blackout son ideales para dormitorios, salas de TV, oficinas privadas y espacios donde se necesita mayor privacidad y control de luz. Su tela bloquea el paso de la luz exterior para lograr ambientes oscuros y confortables a cualquier hora del día.",
+      "Las persianas blackout están diseñadas para bloquear prácticamente el paso de la luz y brindar un alto nivel de privacidad. Son ideales para dormitorios, salas de TV, oficinas, hoteles y otros espacios donde se busca reducir significativamente la iluminación exterior y crear un ambiente más cómodo, privado y controlado.",
     benefits: [
-      "Bloquean el paso de luz",
-      "Mejoran la privacidad",
-      "Ayudan al confort térmico",
-      "Son fabricadas a la medida",
-      "Se adaptan a hogares, oficinas y comercios",
+      "Bloquean prácticamente el paso de la luz",
+      "Brindan un alto nivel de privacidad",
+      "Ayudan a reducir el ingreso de calor solar",
+      "Disminuyen reflejos y deslumbramiento",
+      "Son ideales para descanso y espacios audiovisuales",
+      "Fabricadas a la medida de cada ventana",
     ],
-    uses: ["Dormitorios", "Salas de TV", "Oficinas privadas", "Hoteles", "Cuartos de bebé"],
+    uses: [
+      "Dormitorios",
+      "Salas de TV",
+      "Oficinas privadas",
+      "Salas de reuniones",
+      "Hoteles",
+      "Restaurantes",
+      "Comercios",
+    ],
     image:
-      "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=1200&q=70",
+      "/images/products/persianas-blackout-exterior.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1522444690501-83a3a09f5b8a?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=900&q=70",
+      "/images/products/persianas-blackout-exterior.jpg",
+      "/images/products/persianas-blackout-oficina.jpg",
+      "/images/products/persianas-blackout-dormitorio.jpg",
     ],
   },
   {
@@ -73,60 +50,82 @@ export const products = [
     waKey: "screen",
     featured: true,
     excerpt:
-      "Control solar y privacidad sin perder la vista hacia el exterior.",
+      "Control solar, privacidad y visibilidad hacia el exterior para hogares, oficinas y terrazas.",
     h1: "Persianas screen en Guatemala",
     metaTitle:
-      "Persianas Screen en Guatemala | Control Solar y Privacidad | Maperco",
+      "Persianas Screen en Guatemala | Fabricación e Instalación | Maperco",
     metaDescription:
-      "Persianas screen a la medida para oficinas, salas y ventanales. Control de luz, privacidad y diseño moderno en Guatemala. Solicita una cotización.",
+      "Instalamos persianas screen a la medida para hogares, oficinas, ventanales y terrazas. Reduce el calor, filtra la luz y mantiene visibilidad hacia el exterior. Cotiza por WhatsApp.",
     intro:
-      "Las persianas screen están fabricadas con telas técnicas micro-perforadas que filtran el sol y reducen el deslumbramiento, manteniendo la visibilidad hacia el exterior. Son la opción favorita para oficinas y grandes ventanales por su look moderno y su control solar.",
+      "Las persianas screen son una solución moderna para controlar la entrada de luz y reducir el calor sin perder completamente la visibilidad hacia el exterior. Su tejido técnico filtra la radiación solar, disminuye el deslumbramiento y aporta privacidad durante el día, por lo que son ideales para ventanales amplios, oficinas, salas, apartamentos y espacios exteriores protegidos.",
     benefits: [
-      "Filtran los rayos del sol y reducen el calor",
-      "Mantienen la vista hacia afuera durante el día",
-      "Protegen muebles y pisos de la decoloración",
-      "Estética moderna ideal para oficinas",
-      "Disponibles en distintos porcentajes de apertura",
+      "Filtran la luz solar",
+      "Reducen el deslumbramiento",
+      "Ayudan a disminuir la sensación de calor",
+      "Permiten mantener visibilidad hacia el exterior",
+      "Aportan privacidad durante el día",
+      "Son fabricadas a la medida",
+      "Se adaptan a interiores y espacios exteriores protegidos",
     ],
-    uses: ["Oficinas", "Salas", "Ventanales", "Recepciones", "Comercios"],
+    uses: [
+      "Salas",
+      "Dormitorios",
+      "Oficinas",
+      "Apartamentos",
+      "Ventanales amplios",
+      "Terrazas",
+      "Pérgolas",
+      "Espacios comerciales",
+    ],
     image:
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=70",
+      "/images/products/persianas-screen-interior1.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=70",
+      "/images/products/persianas-screen-interior1.jpg",
+      "/images/products/persianas-screen-interior2.jpg",
+      "/images/products/persianas-screen-interior3.jpg",
     ],
   },
   {
-    slug: "persianas-dia-y-noche",
-    name: "Persianas día y noche",
-    shortName: "Día y noche",
+    slug: "persianas-verticales",
+    name: "Persianas verticales",
+    shortName: "Verticales",
     category: "Persianas",
-    waKey: "diaYNoche",
+    waKey: "verticales",
     featured: true,
     excerpt:
-      "Franjas alternas que regulan la luz a tu gusto, de traslúcido a opaco.",
-    h1: "Persianas día y noche en Guatemala",
+      "Control práctico de luz y privacidad para ventanales amplios en oficinas, comercios y hogares.",
+    h1: "Persianas verticales en Guatemala",
     metaTitle:
-      "Persianas Día y Noche en Guatemala | Roller Duo | Persianas Maperco",
+      "Persianas Verticales en Guatemala | A la Medida | Persianas Maperco",
     metaDescription:
-      "Persianas día y noche (roller duo) a la medida en Guatemala. Regula la luz y la privacidad alternando franjas traslúcidas y opacas. Cotiza por WhatsApp.",
+      "Persianas verticales a la medida en Guatemala para oficinas, comercios, salas y ventanales grandes. Regula la luz, mejora la privacidad y aporta un acabado profesional.",
     intro:
-      "Las persianas día y noche, también conocidas como roller duo o eclipse, combinan franjas traslúcidas y opacas que se deslizan entre sí. Con solo mover la cadena regulas la entrada de luz y la privacidad sin cambiar de cortina: claridad de día, intimidad de noche.",
+      "Las persianas verticales son una solución práctica y elegante para cubrir ventanales amplios. Sus lamas giratorias permiten regular con precisión la entrada de luz y el nivel de privacidad, además de facilitar la apertura lateral cuando se necesita acceso completo a la ventana o puerta. Son ideales para oficinas, comercios, instituciones y espacios residenciales de gran formato.",
     benefits: [
-      "Regulación precisa de la luz con un solo mecanismo",
-      "Dos ambientes en una sola persiana: traslúcido u opaco",
-      "Diseño elegante y contemporáneo",
-      "Privacidad ajustable a cualquier hora",
-      "Fabricadas a la medida de cada ventana",
+      "Regulación precisa de la entrada de luz",
+      "Privacidad ajustable mediante lamas giratorias",
+      "Ideales para ventanales amplios y puertas corredizas",
+      "Apertura lateral práctica y funcional",
+      "Diseño limpio y profesional",
+      "Fabricadas a la medida de cada espacio",
+      "Fáciles de mantener y utilizar",
     ],
-    uses: ["Salas", "Comedores", "Dormitorios", "Oficinas", "Apartamentos"],
+    uses: [
+      "Oficinas",
+      "Salas de reuniones",
+      "Comercios",
+      "Instituciones",
+      "Centros educativos",
+      "Salas",
+      "Ventanales amplios",
+      "Puertas corredizas",
+    ],
     image:
-      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=70",
+      "/images/products/persianas-verticales.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=70",
+      "/images/products/persianas-verticales-oficina.jpg",
+      "/images/products/persianas-verticales-aula2.jpg",
+      "/images/products/persianas-verticales-comercial.jpg",
     ],
   },
   {
@@ -136,29 +135,49 @@ export const products = [
     category: "Cortinas",
     waKey: "romanas",
     featured: true,
+
     excerpt:
-      "Pliegues elegantes en tela que aportan calidez y sofisticación.",
+      "Diseño elegante en tela con pliegues definidos, ideal para crear ambientes cálidos, modernos y sofisticados.",
+
     h1: "Cortinas romanas en Guatemala",
+
     metaTitle:
-      "Cortinas Romanas en Guatemala | Elegancia a la Medida | Maperco",
+      "Cortinas Romanas en Guatemala | Diseño a la Medida | Maperco",
+
     metaDescription:
-      "Cortinas romanas a la medida en Guatemala: pliegues elegantes en tela para salas, dormitorios y comedores. Decoración cálida y sofisticada. Cotiza por WhatsApp.",
+      "Cortinas romanas a la medida en Guatemala para salas, dormitorios, comedores, oficinas y espacios modernos. Elegancia, control de luz y acabados personalizados con Maperco.",
+
     intro:
-      "Las cortinas romanas se recogen formando pliegues horizontales uniformes, aportando una sensación cálida y elegante. Disponibles en una amplia variedad de telas, son perfectas para quienes buscan decorar con sofisticación sin renunciar al control de luz.",
+      "Las cortinas romanas combinan funcionalidad y diseño mediante un sistema de tela que se recoge formando pliegues horizontales definidos. Su acabado limpio y elegante permite integrarlas fácilmente en espacios residenciales y comerciales, aportando textura, calidez y control de iluminación. Se fabrican a la medida y pueden personalizarse en diferentes telas, colores y niveles de opacidad según las necesidades de cada ambiente.",
+
     benefits: [
-      "Acabado elegante y atemporal",
-      "Gran variedad de telas, texturas y colores",
-      "Aportan calidez y suavizan los ambientes",
-      "Opción de forro blackout para mayor oscuridad",
-      "Confeccionadas a la medida de tu ventana",
+      "Diseño elegante y contemporáneo",
+      "Pliegues horizontales uniformes y decorativos",
+      "Amplia variedad de telas, colores y texturas",
+      "Permiten regular la entrada de luz natural",
+      "Disponibles con opciones de mayor opacidad o forro blackout",
+      "Fabricadas a la medida de cada ventana",
+      "Se integran fácilmente en espacios residenciales y comerciales",
     ],
-    uses: ["Salas", "Comedores", "Dormitorios", "Estudios", "Recepciones"],
+
+    uses: [
+      "Salas",
+      "Comedores",
+      "Dormitorios",
+      "Oficinas",
+      "Estudios",
+      "Recepciones",
+      "Hoteles",
+      "Espacios comerciales",
+    ],
+
     image:
-      "https://images.unsplash.com/photo-1616627561839-074385245ff6?auto=format&fit=crop&w=1200&q=70",
+      "/images/products/cortinas-romanas.jpg",
+
     gallery: [
-      "https://images.unsplash.com/photo-1616627561839-074385245ff6?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=900&q=70",
+      "/images/products/cortinas-romanas-sala.jpg",
+      "/images/products/cortinas-romanas-dormitorio.jpg",
+      "/images/products/cortinas-romanas-oficina.jpg",
     ],
   },
   {
@@ -186,11 +205,11 @@ export const products = [
     ],
     uses: ["Divisiones de ambiente", "Clósets", "Baños", "Cocinas", "Comercios"],
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=70",
+      "/images/products/puertas-plegables.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=70",
+      "/images/products/puertas-plegables-sala.jpg",
+      "/images/products/puertas-plegables.jpg",
+      "/images/products/puertas-plegables-oficina.jpg",
     ],
   },
   {
@@ -217,11 +236,11 @@ export const products = [
     ],
     uses: ["Ventanas", "Puertas", "Dormitorios", "Cocinas", "Patios"],
     image:
-      "https://images.unsplash.com/photo-1558211583-d26f610c1eb1?auto=format&fit=crop&w=1200&q=70",
+      "/images/products/mosquiteros-ventanas.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1558211583-d26f610c1eb1?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1530889464795-7e3f2dec8885?auto=format&fit=crop&w=900&q=70",
-      "https://images.unsplash.com/photo-1416339306562-f3d12fefd36f?auto=format&fit=crop&w=900&q=70",
+      "/images/products/mosquiteros-ventanas.jpg",
+      "/images/products/mosquiteros-corredizos.jpg",
+      "/images/products/mosquiteros-puertas.png",
     ],
   },
 ];

@@ -2,9 +2,9 @@ import Link from "next/link";
 import VideoHero from "@/components/VideoHero";
 import SectionHeading from "@/components/SectionHeading";
 import ProductCard from "@/components/ProductCard";
-import CTASection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
 import ProjectCard from "@/components/ProjectCard";
+import ArchiveSection from "@/components/ArchiveSection";
 import { waLink } from "@/lib/whatsapp";
 import { WhatsAppIcon } from "@/components/WhatsAppButton";
 import { getFeaturedProducts, products } from "@/data/products";
@@ -16,15 +16,14 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Persianas en Guatemala | Instalación a Medida | Persianas Maperco",
   description:
-    "Persianas Maperco ofrece persianas, cortinas, blackout, screen, día y noche, mosquiteros y puertas plegables a la medida en Guatemala. Solicita tu cotización por WhatsApp.",
+    "Persianas Maperco ofrece persianas, cortinas, blackout, screen, verticales, mosquiteros y puertas plegables a la medida en Guatemala. Solicita tu cotización por WhatsApp.",
   path: "/",
 });
 
 const categories = [
-  { name: "Persianas enrollables", href: "/productos/persianas-enrollables" },
   { name: "Persianas blackout", href: "/productos/persianas-blackout" },
   { name: "Persianas screen", href: "/productos/persianas-screen" },
-  { name: "Persianas día y noche", href: "/productos/persianas-dia-y-noche" },
+  { name: "Persianas verticales", href: "/productos/persianas-verticales" },
   { name: "Cortinas romanas", href: "/productos/cortinas-romanas" },
   { name: "Puertas plegables", href: "/productos/puertas-plegables" },
   { name: "Mosquiteros", href: "/productos/mosquiteros" },
@@ -75,9 +74,9 @@ export default function HomePage() {
         secondaryCtaLabel="Ver productos"
         secondaryCtaHref="/productos"
         videos={[
-          { src: "/videos/hero-maperco.mp4", poster: "/images/hero-fallback.jpg" },
-          { src: "/videos/hero-maperco-2.mp4", poster: "/images/hero-fallback.jpg" },
-          { src: "/videos/hero-maperco-3.mp4", poster: "/images/hero-fallback.jpg" },
+          { src: "/videos/hero-maperco.mp4" },
+          { src: "/videos/persiana-screen.mp4" },
+          { src: "/videos/cortina-romana.mp4" },
         ]}
       />
 
@@ -94,7 +93,7 @@ export default function HomePage() {
               <Link
                 key={c.href}
                 href={c.href}
-                className="group flex items-center justify-between rounded-2xl border border-ink/10 bg-white px-5 py-5 transition hover:border-clay/40 hover:shadow-lg hover:shadow-ink/5"
+                className="group flex items-center justify-between rounded-lg border border-sand-200 bg-white px-5 py-5 transition hover:-translate-y-0.5 hover:border-clay/30 hover:shadow-lg hover:shadow-ink/5"
               >
                 <span className="font-medium text-ink">{c.name}</span>
                 <svg className="h-5 w-5 text-clay-500 transition group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -115,8 +114,8 @@ export default function HomePage() {
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {benefits.map((b) => (
-              <div key={b.title} className="rounded-2xl border border-ink/10 bg-sand-50 p-6">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-clay-50 text-clay-600">
+              <div key={b.title} className="rounded-lg border border-sand-200 bg-sand-50 p-6">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-clay-50 text-clay-600">
                   <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" d={b.icon} />
                   </svg>
@@ -139,8 +138,8 @@ export default function HomePage() {
           />
           <ol className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {processSteps.map((s, i) => (
-              <li key={s.t} className="relative rounded-2xl border border-ink/10 bg-white p-6">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-ink text-sm font-bold text-white">
+              <li key={s.t} className="relative rounded-lg border border-sand-200 bg-white p-6">
+                <span className="inline-flex h-10 w-10 items-center justify-center rounded-md bg-ink text-sm font-bold text-white">
                   {i + 1}
                 </span>
                 <h3 className="mt-4 text-base font-semibold text-ink">{s.t}</h3>
@@ -227,7 +226,7 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="rounded-2xl border border-ink/10 bg-sand-50 p-7">
+          <div className="rounded-lg border border-sand-200 bg-sand-50 p-7">
             <h3 className="text-lg font-semibold text-ink">
               Cobertura en Guatemala
             </h3>
@@ -239,7 +238,7 @@ export default function HomePage() {
               {site.coverage.map((zone) => (
                 <li
                   key={zone}
-                  className="rounded-full border border-ink/10 bg-white px-3 py-1.5 text-xs font-medium text-ink/65"
+                  className="rounded-md border border-sand-200 bg-white px-3 py-1.5 text-xs font-medium text-ink/65"
                 >
                   {zone}
                 </li>
@@ -249,14 +248,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <FAQSection faqs={getFaqs("general")} />
+      <ArchiveSection />
 
-      <CTASection
-        title="¿Listo para transformar tus espacios?"
-        subtitle="Cuéntanos qué necesitas y te asesoramos con la mejor solución a la medida."
-        whatsAppKey="general"
-        primaryLabel="Cotizar por WhatsApp"
-      />
+      <FAQSection faqs={getFaqs("general")} />
     </>
   );
 }

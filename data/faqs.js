@@ -29,23 +29,6 @@ export const faqs = {
         "Sí. Además de fabricar, instalamos de forma profesional para que tus persianas queden niveladas, seguras y funcionando correctamente. También ofrecemos reparación y mantenimiento.",
     },
   ],
-  "persianas-enrollables": [
-    {
-      question: "¿Qué telas puedo elegir para una persiana enrollable?",
-      answer:
-        "Puedes elegir entre telas traslúcidas (dejan pasar luz suave), screen (control solar con vista al exterior) y blackout (oscuridad total), según la privacidad y el control de luz que busques.",
-    },
-    {
-      question: "¿Sirven para ventanas grandes?",
-      answer:
-        "Sí. Las fabricamos a la medida, desde ventanas pequeñas hasta ventanales amplios. En vanos muy anchos podemos dividir en varios paños para una mejor operación.",
-    },
-    {
-      question: "¿Son fáciles de limpiar?",
-      answer:
-        "Sí. La mayoría se limpian con un paño seco o ligeramente húmedo. Te damos las recomendaciones según la tela que elijas.",
-    },
-  ],
   "persianas-blackout": [
     {
       question: "¿Las persianas blackout bloquean el 100% de la luz?",
@@ -80,16 +63,16 @@ export const faqs = {
         "Sí. Al filtrar los rayos UV ayudan a reducir la decoloración de muebles, pisos y cortinas.",
     },
   ],
-  "persianas-dia-y-noche": [
+  "persianas-verticales": [
     {
-      question: "¿Cómo funcionan las persianas día y noche?",
+      question: "¿Cómo funcionan las persianas verticales?",
       answer:
-        "Tienen franjas traslúcidas y opacas que se deslizan entre sí. Al mover la cadena alineas las franjas para dejar pasar la luz o las cruzas para mayor privacidad y oscuridad.",
+        "Tienen lamas verticales que giran para regular la entrada de luz y privacidad. También pueden abrirse lateralmente para despejar por completo el ventanal o puerta corrediza.",
     },
     {
-      question: "¿Dan privacidad total?",
+      question: "¿Para qué espacios se recomiendan?",
       answer:
-        "Al cruzar las franjas opacas se logra gran privacidad y reducción de luz. Para oscuridad total recomendamos persianas blackout.",
+        "Son ideales para ventanales amplios, oficinas, comercios, instituciones, salas de reuniones y puertas corredizas donde se necesita una apertura práctica y control de luz.",
     },
   ],
   "cortinas-romanas": [

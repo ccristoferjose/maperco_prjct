@@ -22,7 +22,7 @@ export default function VideoHero({
   eyebrow = "Persianas Maperco",
   // Compatibilidad: si no se pasa `videos`, usa el video único.
   videoSrc = "/videos/hero-maperco.mp4",
-  posterSrc = "/images/hero-fallback.jpg",
+  posterSrc,
   videos,
   // Tiempo máximo por video (ms) antes de avanzar, por si el video es muy largo
   // o no dispara el evento "ended".
@@ -97,7 +97,7 @@ export default function VideoHero({
           loop={!isCarousel}
           playsInline
           preload={i === 0 ? "auto" : "none"}
-          poster={slide.poster || posterSrc}
+          poster={slide.poster || posterSrc || undefined}
           aria-hidden="true"
           onEnded={isCarousel ? goNext : undefined}
         >
@@ -105,24 +105,20 @@ export default function VideoHero({
         </video>
       ))}
 
-      {/* Overlay en degradado para legibilidad del texto. */}
-      <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/60 to-ink/30" />
-      <div className="absolute inset-0 bg-ink/30" />
-
       <div className="relative z-10 flex min-h-screen items-center">
         <div className="container-base">
-          <div className="max-w-3xl animate-fade-up py-28">
+          <div className="max-w-[18rem] animate-fade-up py-28 sm:max-w-3xl sm:py-32">
             {eyebrow ? (
-              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.3em] text-white/80">
+              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.28em] text-white/80">
                 {eyebrow}
               </p>
             ) : null}
 
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-7xl">
+            <h1 className="hero-title max-w-[18rem] text-3xl font-bold leading-[1.08] tracking-tight text-white sm:max-w-4xl sm:text-5xl lg:text-7xl">
               {title}
             </h1>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-white/85 sm:text-xl">
+            <p className="mt-6 max-w-2xl text-base leading-7 text-white/85 sm:text-xl sm:leading-8">
               {subtitle}
             </p>
 
@@ -130,7 +126,7 @@ export default function VideoHero({
               {primaryCtaLabel ? (
                 <Link
                   href={primaryCtaHref}
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-clay px-7 py-4 text-sm font-semibold text-white shadow-lg shadow-ink/20 transition hover:bg-clay-600"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-white px-7 py-4 text-sm font-semibold text-ink shadow-lg shadow-ink/20 transition hover:bg-sand-100 sm:w-auto"
                 >
                   {primaryCtaLabel}
                 </Link>
@@ -139,7 +135,7 @@ export default function VideoHero({
               {secondaryCtaLabel ? (
                 <Link
                   href={secondaryCtaHref}
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 px-7 py-4 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/10"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-md border border-white/45 px-7 py-4 text-sm font-semibold text-white backdrop-blur-sm transition hover:border-white/70 hover:bg-white/10 sm:w-auto"
                 >
                   {secondaryCtaLabel}
                 </Link>

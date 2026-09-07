@@ -4,7 +4,16 @@
 
 @layer base {
   :root {
-    --color-clay: #b07a3c;
+    --brand-primary: #12146f;
+    --brand-secondary: #142172;
+    --brand-gray: #a5a4aa;
+    --brand-white: #ffffff;
+    --brand-navy-dark: #090b3f;
+    --brand-blue-light: #eef1f8;
+    --surface-soft: #f7f8fb;
+    --border-soft: #dde2ef;
+    --text-primary: #101244;
+    --text-secondary: #5b6077;
   }
 
   html {
@@ -15,6 +24,7 @@
   body {
     @apply bg-sand-50 text-ink antialiased;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
   }
 
   /* Compensa el header fijo al usar anclas internas. */
@@ -41,15 +51,15 @@
   }
 
   .eyebrow {
-    @apply text-xs font-semibold uppercase tracking-[0.25em] text-clay-600;
+    @apply text-xs font-semibold uppercase tracking-[0.22em] text-clay-600;
   }
 
   .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-clay;
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-6 py-3.5 text-sm font-semibold transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-clay;
   }
 
   .btn-primary {
-    @apply btn bg-clay text-white shadow-sm hover:bg-clay-600;
+    @apply btn bg-clay text-white shadow-sm shadow-ink/10 hover:bg-clay-600;
   }
 
   .btn-dark {
@@ -57,7 +67,7 @@
   }
 
   .btn-outline {
-    @apply btn border border-ink/15 bg-white text-ink hover:border-ink/30 hover:bg-sand-100;
+    @apply btn border border-clay/25 bg-white text-clay hover:border-clay/45 hover:bg-sand-100;
   }
 
   .btn-whatsapp {
@@ -66,6 +76,16 @@
 
   .prose-maperco p {
     @apply text-base leading-7 text-ink/75;
+  }
+
+  .hero-title {
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 639px) {
+  .hero-title {
+    text-wrap: wrap;
   }
 }
 

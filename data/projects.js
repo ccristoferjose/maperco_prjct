@@ -2,11 +2,12 @@
 
 export const projectFilters = [
   "Hogar",
-  "Oficina",
-  "Comercio",
-  "Blackout",
+  "Exterior",
+  "Dormitorio",
+  "Educación",
   "Screen",
   "Día y noche",
+  "Verticales",
   "Cortinas",
   "Mosquiteros",
 ];
@@ -14,101 +15,68 @@ export const projectFilters = [
 export const projects = [
   {
     id: "blackout-dormitorio-z14",
-    title: "Dormitorio principal con blackout",
-    product: "Persianas blackout",
+    title: "Pérgola con protección solar",
+    product: "Persianas screen",
     space: "Hogar",
     description:
-      "Oscuridad total para descansar mejor en un dormitorio en Zona 14.",
-    tags: ["Hogar", "Blackout"],
+      "Persianas exteriores que reducen el sol sin perder la conexión con el exterior.",
+    tags: ["Hogar", "Exterior", "Screen"],
     image:
-      "https://images.unsplash.com/photo-1540932239986-30128078f3c5?auto=format&fit=crop&w=900&q=70",
+      "/images/projects/Black_out_1.jpg",
   },
   {
-    id: "screen-oficina-z10",
-    title: "Oficina con control solar",
+    id: "screen-exterior-z10",
+    title: "Terraza con protección solar",
     product: "Persianas screen",
-    space: "Oficina",
+    space: "Exterior",
     description:
-      "Persianas screen en ventanales para reducir el deslumbramiento en Zona 10.",
-    tags: ["Oficina", "Screen"],
+      "Persianas diseñadas para filtrar la luz, brindar sombra y mantener una estética profesional.",
+    tags: ["Exterior", "Screen"],
     image:
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=70",
+      "/images/projects/Black_out_2.png",
   },
   {
     id: "dia-noche-sala-mixco",
-    title: "Sala con persianas día y noche",
-    product: "Persianas día y noche",
-    space: "Hogar",
+    title: "Luz natural con privacidad",
+    product: "Persianas screen",
+    space: "Dormitorio",
     description:
-      "Regulación de luz a gusto en una sala familiar en Mixco.",
-    tags: ["Hogar", "Día y noche"],
+      "Permite aprovechar la vista exterior mientras suaviza la luz y mantiene un ambiente agradable.",
+    tags: ["Dormitorio", "Día y noche"],
     image:
-      "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=900&q=70",
+      "/images/projects/Dia_noche_1.jpg",
   },
   {
     id: "romanas-comedor-ces",
-    title: "Comedor con cortinas romanas",
-    product: "Cortinas romanas",
+    title: "Aula con control de luz",
+    product: "Persianas verticales",
+    space: "Educación",
+    description:
+      "Solución funcional para regular la entrada de luz y mejorar el confort en espacios de trabajo o estudio.",
+    tags: ["Educación", "Verticales"],
+    image:
+      "/images/projects/vertical_1.jpg",
+  },
+  {
+    id: "decorativas-hogar-vn",
+    title: "Habitación con cortinas elegantes",
+    product: "Cortinas",
     space: "Hogar",
     description:
-      "Cortinas romanas en tela cálida para un comedor en Carretera a El Salvador.",
+      "Combinación de visillo y cortina decorativa para brindar privacidad, suavizar la luz y dar calidez al ambiente.",
     tags: ["Hogar", "Cortinas"],
     image:
-      "https://images.unsplash.com/photo-1616627561839-074385245ff6?auto=format&fit=crop&w=900&q=70",
+      "/images/projects/Cortinas_1.jpg",
   },
   {
-    id: "screen-comercio-vn",
-    title: "Local comercial con screen",
-    product: "Persianas screen",
-    space: "Comercio",
-    description:
-      "Fachada comercial protegida del sol manteniendo la visibilidad en Villa Nueva.",
-    tags: ["Comercio", "Screen"],
-    image:
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=70",
-  },
-  {
-    id: "mosquiteros-casa-bdm",
-    title: "Mosquiteros para toda la casa",
-    product: "Mosquiteros",
+    id: "mosquiteros-ventilacion-hogar",
+    title: "Ventilación con protección",
+    product: "Mosquiteros corredizos",
     space: "Hogar",
     description:
-      "Mosquiteros corredizos en ventanas y puertas de una casa en Boca del Monte.",
+      "Una solución práctica para mantener los espacios frescos, protegidos y conectados con el exterior.",
     tags: ["Hogar", "Mosquiteros"],
     image:
-      "https://images.unsplash.com/photo-1558211583-d26f610c1eb1?auto=format&fit=crop&w=900&q=70",
-  },
-  {
-    id: "blackout-oficina-scp",
-    title: "Sala de juntas con blackout",
-    product: "Persianas blackout",
-    space: "Oficina",
-    description:
-      "Control total de luz para proyecciones en Santa Catarina Pinula.",
-    tags: ["Oficina", "Blackout"],
-    image:
-      "https://images.unsplash.com/photo-1522444690501-83a3a09f5b8a?auto=format&fit=crop&w=900&q=70",
-  },
-  {
-    id: "cortinas-recepcion-comercio",
-    title: "Recepción con cortinas elegantes",
-    product: "Cortinas",
-    space: "Comercio",
-    description:
-      "Cortinas a la medida que elevan la imagen de una recepción comercial.",
-    tags: ["Comercio", "Cortinas"],
-    image:
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=900&q=70",
-  },
-  {
-    id: "dia-noche-apto-z10",
-    title: "Apartamento con roller duo",
-    product: "Persianas día y noche",
-    space: "Hogar",
-    description:
-      "Persianas día y noche en un apartamento moderno en Zona 10.",
-    tags: ["Hogar", "Día y noche"],
-    image:
-      "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=900&q=70",
+      "/images/projects/Mosquiteros_1.jpg",
   },
 ];

@@ -32,8 +32,8 @@ export default function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-40 transition-colors duration-300 ${
         solid
-          ? "border-b border-ink/10 bg-sand-50/95 backdrop-blur"
-          : "bg-transparent"
+          ? "border-b border-sand-200 bg-white/95 shadow-sm shadow-ink/5 backdrop-blur"
+          : "border-b border-white/10 bg-brand-navy/82 shadow-sm shadow-ink/20 backdrop-blur-md"
       }`}
     >
       <div className="container-base flex h-20 items-center justify-between">
@@ -43,11 +43,23 @@ export default function Header() {
           aria-label="Persianas Maperco — Inicio"
         >
           <span
-            className={`text-xl font-serif font-bold tracking-tight ${
+            className={`inline-flex items-center gap-3 text-xl font-serif font-bold tracking-tight ${
               solid ? "text-ink" : "text-white"
             }`}
           >
-            Persianas <span className="text-clay">Maperco</span>
+            <span className={`grid h-10 w-10 place-items-center rounded-md border ${
+              solid ? "border-sand-200 bg-ink" : "border-white/30 bg-white/10"
+            }`}>
+              <span className="flex w-5 flex-col gap-1">
+                <span className="h-0.5 bg-white" />
+                <span className="h-0.5 bg-white" />
+                <span className="h-0.5 bg-white" />
+                <span className="h-0.5 bg-white" />
+              </span>
+            </span>
+            <span>
+              Persianas <span className={solid ? "text-clay" : "text-white"}>Maperco</span>
+            </span>
           </span>
         </Link>
 
@@ -77,9 +89,9 @@ export default function Header() {
             href={waLink("general")}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-whatsapp px-5 py-2.5"
+            className={solid ? "btn-primary px-5 py-2.5" : "btn border border-white/35 bg-white text-ink hover:bg-sand-100 px-5 py-2.5"}
           >
-            Cotizar por WhatsApp
+            Cotizar
           </a>
         </div>
 
@@ -105,7 +117,7 @@ export default function Header() {
 
       {/* Menú móvil */}
       {open ? (
-        <div className="border-t border-ink/10 bg-sand-50 lg:hidden">
+        <div className="border-t border-sand-200 bg-white shadow-lg shadow-ink/5 lg:hidden">
           <nav className="container-base flex flex-col py-4">
             {mainNav.map((item) => (
               <Link
@@ -120,9 +132,9 @@ export default function Header() {
               href={waLink("general")}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-whatsapp mt-4"
-            >
-              Cotizar por WhatsApp
+            className="btn-primary mt-4"
+          >
+              Cotizar
             </a>
           </nav>
         </div>
